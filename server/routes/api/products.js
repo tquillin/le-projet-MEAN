@@ -20,7 +20,7 @@ router.get('/:id', function(req, res){
 
 
 // Product(create)
-router.post('/', function(){
+router.post('/', function(req, res){
   console.log(req.body);
     Product.create(req.body.product, function(err, product){
       res.json( product );
@@ -28,12 +28,12 @@ router.post('/', function(){
 });
 
 // Delete
-router.delete('/:id', function(){
+router.delete('/:id', function(req, res){
   console.log("je supprime...");
     Product.findByIdAndRemove(req.params.id, function(err){
-      if (err) {res.status(500).end();
-        res.status(204).end();
-      }
+      if (err) {res.status(500).end();}
+      res.status(204).end();
+
     });
 });
 

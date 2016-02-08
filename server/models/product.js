@@ -2,7 +2,6 @@ var mongoose = require('mongoose');
 
 
 var productSchema =  mongoose.Schema({
-
 // strain
   name: { type: String, required: true },
   description: { type: String },

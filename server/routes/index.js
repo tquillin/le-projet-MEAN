@@ -1,8 +1,8 @@
 var express = require('express');
 var router = express.Router();
 
-router.get('/', function(){
-  res.json( 'index', {title: "Here are products"}); 
+router.get('/', function(req, res){
+  res.render( 'index', {title: "Here are products"});
 
 });
 

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html ng-app="ElectricLadyland">
+  <head>
+    <meta charset="utf-8">
+    <title>ElectricLadylandApp</title>
+    <link rel="stylesheet" href="/css/styles.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script>
+    <!-- you might need to load in angular routing -->
+    <script src="../app/controllers/productController.js" charset="utf-8"></script>
+    <script src="../app/services/productsApi.js" charset="utf-8"></script>
+    <script src="./app/app.js" charset="utf-8"></script>
+  </head>
+
+
+  <body ng-controller="main">
+    <h2 class="header">Bienvenue sur les bonnes idées</h2>
+
+    <div class="row">
+        <form ng-submit="create()">
+            <input type="text" ng-model="newProduct.name" value="" placeholder="...strain">
+            <button type="submit" name="button">Save</button>
+        </form>
+    </div>
+
+
+    <ul>
+      <li ng-repeat="product in products">
+        <p>{{ product.name}}</p>
+        <a href="#" ng-click="delete(product._id)">Delete</a>
+      </li>
+    </ul>
+
+
+  </body>
+</html>

@@ -21,7 +21,7 @@ var productsRouter = require('./server/routes/api/products');
 app.use('/', indexRouter);
 app.use('/api/products', productsRouter);
 
-// var port = 8080;
-app.listen(function(){
-  console.log("je t'écoute...");
+var port = 8080;
+app.listen(port, function(){
+  console.log("je t'écoute..." + port);
 });
