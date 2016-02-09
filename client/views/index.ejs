@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8">
     <title>ElectricLadylandApp</title>
-
+    <link href='https://fonts.googleapis.com/css?family=Raleway' rel='stylesheet' type='text/css'>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.5/css/materialize.min.css">
     <link rel="stylesheet" href="/css/styles.css">
 
@@ -43,26 +43,77 @@
 
     </div>
 
+    <div class="header">
+      <h1>Electric <img class="beer" src="http://www.tokeofthetown.com/assets_c/2014/05/TokeoftheTown-NFL-SATIRE-thumb-560x398.jpg" alt="" /> Ladyland</h1>
 
-    <h2 class="header">Electric Ladyland</h2>
+    </div>
+
+    <div id="intro" class="">
+
+      <h2>Our Cannabis</h2>
+      <h4 id="intro-title">We proudly carry Hey Joe Premium Cannabis</h4>
+      <p id="intro-description">
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+      </p>
+      <img id="purple-hape" src="http://uploads.medicaljane.com/wp-content/uploads/2012/06/purplehazeTHUMB11.jpg" alt="" />
+
+    </div>
+
+
+
+    <div id="pricing" class="">
+      <div class="pricing-description">
+          <h3>Pricing(tax not included):<br />Retail Marijuana Customers</h3>
+      </div>
+      <div class="age">
+        <h3>Red Card NOT Required - Must be OVER 21</h3>
+      </div>
+      <div class="price-list">
+        <ul>
+          <li class="prices">Snob: $20 gram | $55 eighths</li>
+          <li class="prices">Pretty Good: $18 gram | $45 eighths</li>
+          <li class="prices">Special: $15 gram | $40 eigths</li>
+          <li class="prices">Joints & Blunts: $6 each | 3 for $15</li>
+          <li class="prices">Cones: $10 each | 3 for $25</li>
+        </ul>
+      </div>
+    </div>
+
 
     <div class="row">
-        <form ng-submit="create()">
-            <input type="text" ng-model="newProduct.name" value="" placeholder="...strain">
-            <input type="text" ng-model="newProduct.description" value="" placeholder="...description">
-            <input type="text" ng-model="newProduct.rating" value="" placeholder="...rating">
+        <form id="new-entry" ng-submit="create()" class="col s6">
+            <input class="black-text" type="text" ng-model="newProduct.name" value="" placeholder="...strain">
+            <input class="black-text" type="text" ng-model="newProduct.description" value="" placeholder="...description">
+            <input class="black-text" type="text" ng-model="newProduct.rating" value="" placeholder="...rating">
             <button type="submit" name="button">Save</button>
         </form>
     </div>
 
+<!-- <div class=""> -->
 
-    <ul>
-      <li ng-repeat="product in products">
-        <p>name:{{ product.name}}, <br>description:{{product.description}}, <br>rating:{{product.rating}}</p>
+    <div id="product-results" class="">
+        <ul>
+          <li id="product-lists" ng-repeat="product in products">
+            <h3>{{ product.name}}</h3> <br><p>{{product.description}}</p> <br><h6>{{product.rating}}
+            <a href="#" ng-click="delete(product._id)">Delete</a>
+          </li>
+        </ul>
 
-        <a href="#" ng-click="delete(product._id)">Delete</a>
-      </li>
-    </ul>
+    </div>
+
+<!-- </div> -->
+
+    <a href="/inventory">About</a>
+
+
+    <!-- <div id="compares" class="beverages">
+    <img class="beer" src="https://openclipart.org/image/300px/svg_to_png/2214/drunken-duck-Beer-2.png&disposition=attachment" alt="" />
+    <img class="tequila" src="http://media1.break.com/breakstudios/2012/3/16/TEQUILA%20shot-glass-11.jpg" alt="" />
+    <img class="wine" src="http://www.clker.com/cliparts/9/B/q/7/s/Z/wine-glass-hi.png" alt="" />
+    </div> -->
+
+
+
 
 
   </body>

@@ -22,6 +22,8 @@ li:hover{
 
 body{
   background-color: rgb(168, 221, 210);
+  font-family: 'Raleway', sans-serif;
+  color: black;
   /*background: url('https://openclipart.org/image/300px/svg_to_png/2214/drunken-duck-Beer-2.png&disposition=attachment');*/
   /*background-repeat: no-repeat;*/
   /*width: 10px;*/
@@ -29,7 +31,7 @@ body{
 
 #intro{
   position: absolute;
-  top:60%;
+  top: 40%;
   left: 13%;
 }
 
@@ -43,12 +45,12 @@ body{
   margin-top: 10px;
   position: absolute;
   width: 270%;
-  top: 150%;
+  top: 170%;
 }
 
 #pricing{
   position: absolute;
-  top: 100%;
+  top: 80%;
   left: 15%;
   text-align: center;
 }
@@ -132,18 +134,52 @@ text-align: center;
 
 
 .beer{
-  width: 20px;
+  width: 80px;
+  position: absolute;
+  top: 80%;
+  left: 37%;
   /*background: url('https://openclipart.org/image/300px/svg_to_png/2214/drunken-duck-Beer-2.png&disposition=attachment');*/
 }
-.tequila{
+/* .tequila{
   width: 20px;
 }
 .wine{
   width: 20px;
-}
+}*/
 
 .beverages{
   position: absolute;
   top: 50%;
   left: 50%;
+}
+
+
+
+/* new-entry */
+#new-entry{
+  position: absolute;
+  top: 230%;
+  left: 45%;
+  color: black;
+}
+#product-results{
+  position: absolute;
+  top: 130%;
+  left: 10%;
+  width: 70%;
+  /*word-spacing: 50px;*/
+  line-height: 30px;
+  /*display: inline-block;*/
+}
+.header{
+  position: absolute;
+  top: 15%;
+  left: 30%;
+}
+#purple-hape{
+  position: absolute;
+  top: 180%;
+  left: 290%;
+  width: 120px;
+  height: 100px;
 }

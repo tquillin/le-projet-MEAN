@@ -8,6 +8,9 @@ api.factory('productsApi', ['$http', function($http){
 
   var baseUrl = 'http://localhost:8080/api/products/';
 
+  // var baseUrlOne = 'http://localhost:8080/views/inventory/';
+
+
   var productsInterface = {};
 
   productsInterface.getAll = function(){

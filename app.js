@@ -3,6 +3,7 @@ var app = express();
 var mongoose = require('mongoose');
 var bodyParser = require('body-parser');
 
+
 app.use(express.static('./client'));
 
 app.set('views', __dirname + '/client/views');
@@ -18,6 +19,9 @@ app.use(bodyParser.urlencoded({extended: true}));
 var indexRouter = require('./server/routes/index');
 var productsRouter = require('./server/routes/api/products');
 
+app.get('/inventory', function(req, res){
+  res.render('views/inventory');
+});
 app.use('/', indexRouter);
 app.use('/api/products', productsRouter);
 
