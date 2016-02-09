@@ -1,5 +1,10 @@
 console.log('oui, le main controller est ici...');
 
+
+$()
+
+
+
 var ctlr = angular.module('mainController', []);
 
 ctlr.controller('main', ['$scope', 'productsApi', function($scope, productsApi){
