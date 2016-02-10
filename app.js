@@ -22,6 +22,11 @@ var productsRouter = require('./server/routes/api/products');
 app.get('/inventory', function(req, res){
   res.render('views/inventory');
 });
+
+app.use('/inventory', productsRouter);
+
+
+
 app.use('/', indexRouter);
 app.use('/api/products', productsRouter);
 

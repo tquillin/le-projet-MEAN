@@ -19,9 +19,20 @@ li:hover{
   left: 40%;
 }
 
+.eights{
+  width: 5%;
+  height: 7%;
+}
 
+.bg{
+  position: absolute;
+  top: 10;
+  left: 10;
+  width: 100px;
+  height: 150px;
+}
 body{
-  background-color: rgb(168, 221, 210);
+  background-color: rgba(0, 90, 255, 0.8);
   font-family: 'Raleway', sans-serif;
   color: black;
   /*background: url('https://openclipart.org/image/300px/svg_to_png/2214/drunken-duck-Beer-2.png&disposition=attachment');*/
@@ -32,7 +43,7 @@ body{
 #intro{
   position: absolute;
   top: 40%;
-  left: 13%;
+  left: 7%;
 }
 
 #intro-title{
@@ -61,6 +72,11 @@ body{
 .price-list {
 line-height: 25px;
 text-align: center;
+}
+.prices{
+  font-size: 30px;
+  line-height: 45px;
+  /*text-align: left;*/
 }
 #product-list-two{
   position: absolute;
@@ -164,7 +180,7 @@ text-align: center;
 }
 #product-results{
   position: absolute;
-  top: 130%;
+  top: 160%;
   left: 10%;
   width: 70%;
   /*word-spacing: 50px;*/
@@ -183,3 +199,8 @@ text-align: center;
   width: 120px;
   height: 100px;
 }
+/*
+#product-one{
+  width: 20%;
+  height: 30%;
+}*/
