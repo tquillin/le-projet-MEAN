@@ -148,20 +148,25 @@ text-align: center;
   left: 36%;
 }
 
-
-.beer{
+.logo{
   width: 80px;
   position: absolute;
   top: 80%;
   left: 37%;
+}
+.beer{
+  width: 80px;
+  position: absolute;
+  top: 180%;
+  left: 37%;
   /*background: url('https://openclipart.org/image/300px/svg_to_png/2214/drunken-duck-Beer-2.png&disposition=attachment');*/
 }
-/* .tequila{
+ .tequila{
   width: 20px;
 }
 .wine{
   width: 20px;
-}*/
+}
 
 .beverages{
   position: absolute;
@@ -174,7 +179,7 @@ text-align: center;
 /* new-entry */
 #new-entry{
   position: absolute;
-  top: 230%;
+  top: 1230%;
   left: 45%;
   color: black;
 }
@@ -204,3 +209,39 @@ text-align: center;
   width: 20%;
   height: 30%;
 }*/
+
+#buds{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 170%;
+  left: 80%;
+}
+#buds-a{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 220%;
+  left: 80%;
+}
+#buds-b{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 260%;
+  left: 80%;
+}
+#buds-c{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 300%;
+  left: 80%;
+}
+#buds-d{
+  width: 200px;
+  height: 150px;
+  position: absolute;
+  top: 340%;
+  left: 80%;
+}
