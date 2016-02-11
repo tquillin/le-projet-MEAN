@@ -21,15 +21,19 @@ $(document).ready(function(){
     }
 
     function displayTequila(){
-      $(".tequila").hover(function(){
+      $('.tequila').hover(function(){
         $('.display-tequila').css("visibility", "visible");
+        $('#display-tequila-three').css("visibility", "visible");
+
 
       });
 
       }
       function hideDisplayTequila(){
-        $('#exit-tequila').click(function(){
+        $('#exit-tequila-three').click(function(){
           $('.display-tequila').css("visibility", "hidden");
+          $('#display-tequila-three').css("visibility", "hidden");
+
         });
       }
 
@@ -39,7 +43,7 @@ $(document).ready(function(){
 
     function displayWine(){
       $(".wine").hover(function(){
-        $('.display-wine').css("visibility", "visible");
+        $(".display-wine").css("visibility", "visible");
 
       });
 
